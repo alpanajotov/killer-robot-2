@@ -15,18 +15,19 @@ public class Application {
             System.out.println("3. Чисто е");
 
             int objectId = inputScanner.nextInt();
-            boolean isWallDetected = (objectId == OBJECT_WALL);
-            boolean isChairDetected = (objectId == OBJECT_CHAIR);
-            boolean isClear = (objectId == CLEAR);
 
-            if (isWallDetected) {
-                System.out.println("Go sideway");
-            }
-            if (isChairDetected) {
-                System.out.println("Jump");
-            }
-            if (isClear) {
-                System.out.println("Go forward");
+            switch (objectId) {
+                case 1:
+                    System.out.println("Go sideway");
+                    break;
+                case 2:
+                    System.out.println("Jump");
+                    break;
+                case 3:
+                    System.out.println("Go forward");
+                    break;
+                default:
+                    System.out.println("*** Repeat ***");
             }
         }
     }
