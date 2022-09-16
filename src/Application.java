@@ -17,17 +17,10 @@ public class Application {
             int objectId = inputScanner.nextInt();
 
             switch (objectId) {
-                case 1:
-                    System.out.println("Go sideway");
-                    break;
-                case 2:
-                    System.out.println("Jump");
-                    break;
-                case 3:
-                    System.out.println("Go forward");
-                    break;
-                default:
-                    System.out.println("*** Repeat ***");
+                case 1 -> System.out.println("Go sideway");
+                case 2 -> System.out.println("Jump");
+                case 3 -> System.out.println("Go forward");
+                default -> System.out.println("*** Repeat ***");
             }
         }
     }
